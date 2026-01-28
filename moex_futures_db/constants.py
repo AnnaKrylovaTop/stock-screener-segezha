@@ -1,0 +1,6 @@
+BASE_URL = "https://iss.moex.com/iss"
+ENGINE = "futures"
+MARKET = "forts"
+SECURITIES_ENDPOINT = f"engines/{ENGINE}/markets/{MARKET}/securities"
+COLUMNS_ENDPOINT = f"{SECURITIES_ENDPOINT}/columns"
+SCHEMA_VERSION = "1.0.0"
