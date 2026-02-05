@@ -1,0 +1,9 @@
+{
+  "securities": {
+    "columns": ["SECID", "SHORTNAME", "NAME", "EXPIRATIONDATE", "LOTSIZE"],
+    "data": [
+      ["USD-3.24", "USD", "USD/RUB Futures", "2024-03-15", 1000],
+      ["EUR-3.24", "EUR", "EUR/RUB Futures", "2024-03-15", 1000]
+    ]
+  }
+}

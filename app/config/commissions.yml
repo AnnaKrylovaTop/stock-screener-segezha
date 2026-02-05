@@ -1,0 +1,4 @@
+commission:
+  per_contract_rub: 12.0
+  percent_notional: 0.0002
+  description: "Модель комиссии упрощена. Значения можно настроить."
