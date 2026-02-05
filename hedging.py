@@ -58,6 +58,22 @@ def select_instruments(
             if instrument.currency == request.currency
         ]
 
-    candidates.sort(key=lambda instrument: abs((instrument.expiry - request.sell_date).days))
+    windowed = [
+        instrument
+        for instrument in candidates
+        if request.buy_date <= instrument.expiry <= request.sell_date
+    ]
+
+    if windowed:
+        candidates = windowed
+
+    def distance_to_window(instrument: FuturesInstrument) -> int:
+        if instrument.expiry < request.buy_date:
+            return (request.buy_date - instrument.expiry).days
+        if instrument.expiry > request.sell_date:
+            return (instrument.expiry - request.sell_date).days
+        return 0
+
+    candidates.sort(key=lambda instrument: (distance_to_window(instrument), instrument.expiry))
 
     return [calculate_hedge(request, instrument) for instrument in candidates[:max_results]]

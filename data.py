@@ -35,6 +35,24 @@ INSTRUMENTS: list[FuturesInstrument] = [
         expiry=date(2025, 3, 20),
     ),
     FuturesInstrument(
+        code="Si-06.25",
+        name="Фьючерс USD/RUB",
+        industry="Ритейл и маркетплейсы",
+        currency="USD",
+        contract_size=1000.0,
+        price=99.10,
+        expiry=date(2025, 6, 19),
+    ),
+    FuturesInstrument(
+        code="Si-09.25",
+        name="Фьючерс USD/RUB",
+        industry="Импорт фармацевтики",
+        currency="USD",
+        contract_size=1000.0,
+        price=100.30,
+        expiry=date(2025, 9, 18),
+    ),
+    FuturesInstrument(
         code="Eu-12.24",
         name="Фьючерс EUR/RUB",
         industry="Импорт оборудования",
@@ -53,6 +71,15 @@ INSTRUMENTS: list[FuturesInstrument] = [
         expiry=date(2025, 3, 20),
     ),
     FuturesInstrument(
+        code="Eu-06.25",
+        name="Фьючерс EUR/RUB",
+        industry="Экспорт металлов",
+        currency="EUR",
+        contract_size=1000.0,
+        price=107.25,
+        expiry=date(2025, 6, 19),
+    ),
+    FuturesInstrument(
         code="CNY-12.24",
         name="Фьючерс CNY/RUB",
         industry="Импорт электроники",
@@ -69,6 +96,15 @@ INSTRUMENTS: list[FuturesInstrument] = [
         contract_size=10000.0,
         price=13.85,
         expiry=date(2025, 3, 20),
+    ),
+    FuturesInstrument(
+        code="CNY-06.25",
+        name="Фьючерс CNY/RUB",
+        industry="Импорт автокомпонентов",
+        currency="CNY",
+        contract_size=10000.0,
+        price=14.15,
+        expiry=date(2025, 6, 19),
     ),
 ]
 
