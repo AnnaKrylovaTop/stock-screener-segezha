@@ -1,0 +1,8 @@
+{
+  "marketdata": {
+    "columns": ["SECID", "LAST"],
+    "data": [
+      ["USDRUB", 92.8]
+    ]
+  }
+}
