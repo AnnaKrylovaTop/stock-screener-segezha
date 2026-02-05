@@ -48,7 +48,10 @@ def parse_futures_securities(payload: Dict[str, Any]) -> List[FutureContract]:
         if expiry_raw:
             expiry = datetime.strptime(expiry_raw, "%Y-%m-%d")
 
-        currency = sec.get("FACEUNIT") or sec.get("CURRENCYID") or sec.get("CURRENCY") or ""
+        # Определение валюты по префиксу SECID
+            secid_prefix = secid[:2] if len(secid) >= 2 else ""
+            currency_map = {"Si": "USD", "Eu": "EUR", "CR": "CNY"}
+            currency = currency_map.get(secid_prefix, sec.get("FACEUNIT", ""))
         contract_size = sec.get("LOTVALUE") or sec.get("LOT") or sec.get("LOTSIZE")
         if contract_size is None and currency in fallback:
             contract_size = fallback[currency]
