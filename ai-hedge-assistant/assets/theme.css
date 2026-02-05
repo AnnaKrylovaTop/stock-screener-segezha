@@ -1,0 +1,51 @@
+:root {
+  --primary-red: #b3001b;
+  --light-red: #f8d7da;
+  --dark: #1f1f1f;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--dark);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.block-container {
+  padding-top: 1.5rem;
+}
+
+h1, h2, h3, h4 {
+  color: var(--primary-red);
+}
+
+.stButton > button {
+  background: var(--primary-red);
+  color: var(--white);
+  border-radius: 6px;
+  border: none;
+  padding: 0.6rem 1.4rem;
+}
+
+.stButton > button:hover {
+  background: #8f0015;
+  color: var(--white);
+}
+
+.card {
+  border: 1px solid var(--light-red);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #fff7f8;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--primary-red);
+  color: var(--white);
+  font-size: 0.75rem;
+  margin-right: 0.4rem;
+}

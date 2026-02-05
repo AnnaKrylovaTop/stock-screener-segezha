@@ -1,0 +1,18 @@
+{
+  "securities": {
+    "columns": ["SECID", "SHORTNAME", "MATDATE", "FACEUNIT", "LOTVALUE", "MINSTEP"],
+    "data": [
+      ["SiH5", "USD/RUB Mar", "2025-03-20", "USD", 1000, 0.0025],
+      ["SiM5", "USD/RUB Jun", "2025-06-20", "USD", 1000, 0.0025],
+      ["CNYH5", "CNY/RUB Mar", "2025-03-20", "CNY", 10000, 0.001]
+    ]
+  },
+  "marketdata": {
+    "columns": ["SECID", "LAST", "SETTLEPRICE", "INITIALMARGIN"],
+    "data": [
+      ["SiH5", 92.5, 92.3, 6500],
+      ["SiM5", 93.1, 93.0, 6600],
+      ["CNYH5", 12.7, 12.6, 4200]
+    ]
+  }
+}

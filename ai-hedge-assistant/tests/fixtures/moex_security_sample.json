@@ -1,0 +1,14 @@
+{
+  "securities": {
+    "columns": ["SECID", "SHORTNAME", "LOTVALUE", "MINSTEP"],
+    "data": [
+      ["SiH5", "USD/RUB Mar", 1000, 0.0025]
+    ]
+  },
+  "marketdata": {
+    "columns": ["SECID", "INITIALMARGIN"],
+    "data": [
+      ["SiH5", 6500]
+    ]
+  }
+}

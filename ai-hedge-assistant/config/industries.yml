@@ -1,0 +1,49 @@
+{
+  "industries": [
+    {
+      "name": "Электроника и бытовая техника",
+      "default_currency": "CNY",
+      "notes": "Часто расчёты в CNY или USD"
+    },
+    {
+      "name": "Одежда и обувь",
+      "default_currency": "CNY",
+      "notes": "Импорт из Азии"
+    },
+    {
+      "name": "Косметика и фарма B2C",
+      "default_currency": "EUR",
+      "notes": "Часто расчёты в EUR или USD"
+    },
+    {
+      "name": "Автозапчасти и аксессуары",
+      "default_currency": "CNY",
+      "notes": "Импорт, возможен EUR"
+    },
+    {
+      "name": "Детские товары",
+      "default_currency": "CNY",
+      "notes": "Импорт"
+    },
+    {
+      "name": "Дом и ремонт",
+      "default_currency": "USD",
+      "notes": "Импорт, возможен CNY"
+    },
+    {
+      "name": "Ювелирные изделия",
+      "default_currency": "USD",
+      "notes": "Также можно посмотреть золото как справочный актив"
+    },
+    {
+      "name": "Экспорт продовольствия B2C",
+      "default_currency": "USD",
+      "notes": "Экспорт"
+    },
+    {
+      "name": "Экспорт промтоваров",
+      "default_currency": "USD",
+      "notes": "Экспорт, возможен EUR"
+    }
+  ]
+}
