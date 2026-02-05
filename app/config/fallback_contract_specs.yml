@@ -1,0 +1,10 @@
+fallback_specs:
+  USD:
+    contract_size: 1000
+    tick_size: 0.0025
+  EUR:
+    contract_size: 1000
+    tick_size: 0.0025
+  CNY:
+    contract_size: 10000
+    tick_size: 0.0025

@@ -1,0 +1,16 @@
+industries:
+  - name: Импортёр оборудования
+    default_currency: USD
+    hint: Закупки оборудования за рубежом, оплата в USD.
+  - name: Экспортёр сырья
+    default_currency: USD
+    hint: Выручка в USD, расходы в рублях.
+  - name: Импортёр товаров FMCG
+    default_currency: EUR
+    hint: Поставки из ЕС с расчётом в EUR.
+  - name: Экспортёр агропродукции
+    default_currency: CNY
+    hint: Контракты в CNY.
+  - name: IT-услуги на экспорт
+    default_currency: USD
+    hint: Выручка в валюте по контрактам услуг.
